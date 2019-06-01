@@ -10,7 +10,7 @@ namespace DependencyEx1
         {
             PaymentModel paymentModel = new PaymentModel();
             paymentModel.Status = "Not Done";
-            paymentModel.Error = "Strips Payment Done";
+            paymentModel.Error = "Strips Payment Not Done";
             return paymentModel;
         }
     }

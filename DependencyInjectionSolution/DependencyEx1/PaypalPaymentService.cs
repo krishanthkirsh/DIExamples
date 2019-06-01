@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DependencyEx1
 {
-    class PaypalPaymentService : IPaypalPaymentService
+    public class PaypalPaymentService : IPaypalPaymentService
     {
         public PaymentModel PaymentMessage()
         {

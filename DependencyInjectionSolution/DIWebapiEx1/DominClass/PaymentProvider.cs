@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DIWebapiEx1.DominClass
 {
-    internal class PaymentProvider
+    public class PaymentProvider
     {
-        private IPaymentService _paymentService;
+        public IPaymentService _paymentService;
 
-        public IPaymentService PaymentMethodSelection(string mode)
+        public PaymentProvider(string mode)
         {
             if (mode == "Strip")
             {
@@ -20,8 +20,6 @@ namespace DIWebapiEx1.DominClass
             {
                 _paymentService = new PaypalPaymentService();
             }
-
-            return _paymentService;
         }
     }
 }

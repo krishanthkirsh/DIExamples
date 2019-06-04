@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DependencyEx1", "DependencyEx1\DependencyEx1.csproj", "{EFC5845D-6A75-4EF1-AEDB-D3AA10B64D92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIWebapiEx1", "DIWebapiEx1\DIWebapiEx1.csproj", "{12A91450-3375-46F8-8BB7-E979C35AB83C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIEx1Webapi", "DIWebapiEx1\DIEx1Webapi.csproj", "{12A91450-3375-46F8-8BB7-E979C35AB83C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

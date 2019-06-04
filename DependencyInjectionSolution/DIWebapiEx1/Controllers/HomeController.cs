@@ -14,15 +14,14 @@ namespace DIWebapiEx1.Controllers
     public class HomeController : ControllerBase
     {
         private IPaymentService _PaymentService;
-        
+
         // GET: api/Home
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            PaymentProvider _provider = new PaymentProvider();
-            _PaymentService = _provider.PaymentMethodSelection("Paypal");
-            var message = _PaymentService.PaymentMessage();
-            return new string[] { message.Status, message.Error};
+            PaymentProvider _provider = new PaymentProvider("Paypal");
+            var message = _provider._paymentService.PaymentMessage();
+            return new string[] { message.Status, message.Error };
         }
 
         // GET: api/Home/5
